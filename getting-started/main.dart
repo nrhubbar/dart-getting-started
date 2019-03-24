@@ -4,7 +4,7 @@ const int DEFAULT_MAX_GUESS = 100;
 
 void main(List<String> args) {
 
-  int max = MAX_GUESS;
+  int max = DEFAULT_MAX_GUESS;
   if(args.length > 0) {
     max = int.parse(args[0]);
   }
