@@ -1,9 +1,15 @@
 import 'dart:io';
-import 'dart:core';
 
+const int DEFAULT_MAX_GUESS = 100;
 
-void main() {
-  hiLo(100);
+void main(List<String> args) {
+
+  int max = MAX_GUESS;
+  if(args.length > 0) {
+    max = int.parse(args[0]);
+  }
+
+  hiLo(max);
 
 }
 
